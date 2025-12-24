@@ -77,9 +77,3 @@ app.post("/analyze", async (req, res) => {
       error: "Internal server error",
       details: error.response?.data || error.message
     });
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`RealityCheck API listening on port ${PORT}`);
-});
